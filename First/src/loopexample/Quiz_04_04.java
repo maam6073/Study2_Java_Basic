@@ -4,38 +4,44 @@ public class Quiz_04_04
 {
 	public static void main(String[] args)
 	{
-		int count = 7;
-		int num = 0;
 		
-		for(int i = 1; i<= count; i++)
+		int a = 4;
+		int b = 1;
+		int c = 5;
+		int d = 3;
+		
+		for(int i = 1; i <= 7; i++)
 		{
-			
-				for(int k =count-4; k>=num; k--)
+			if(i <= 4)
+			{
+				for(int j = a; j>0; j--)
 				{
-					System.out.print(" ");					
+					System.out.print(" ");
 				}
-				num++;
-				
-				for(int j = 1; j<=i; j++)
+				for(int j = 1; j <= b; j++)
 				{
-					if(i % 2 == 0)
-						continue;
-					System.out.print("* ");
+					System.out.print("*");
 				}
-			
-			if(i % 2 != 0)
+				b +=2;
+				a -=1;
 				System.out.println();
+			}
+			else
+			{
+				for(int j = 1; j < d; j++)
+				{
+					System.out.print(" ");
+				}
+				for(int j = c; j > 0; j--)
+				{
+					System.out.print("*");
+				}
+				c -= 2;
+				d += 1;
+				System.out.println();
+			}
+			
+			
 		}
-		
-		//test
-//		for(int i = 1; i<=9; i++)
-//		{
-//			for(int j = 9; j > count; j--)
-//			{
-//				System.out.print("*");				
-//			}
-//			System.out.println();
-//			count ++;
-//		}
 	}
 }
