@@ -2,18 +2,20 @@ package singleton;
 
 public class Car 
 {
-	int CarID;
+	private static int serial = 10000;
+	int CarNum;
 	String CarName;
 	
 	
 	Car()
 	{
-		//this.CarID = CarFactory.getInstance().createCar();
+		serial ++;
+		this.CarNum = serial;
 	}
 	
 	public int getCarNum()
 	{
-		return CarID;
+		return CarNum;
 	}
 	
 }

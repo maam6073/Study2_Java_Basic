@@ -2,8 +2,6 @@ package singleton;
 
 public class CarFactory 
 {
-	static int sirialNum = 10000;
-	int CarID;
 	private static CarFactory instance = new CarFactory();
 	private CarFactory() {}
 	
@@ -16,10 +14,10 @@ public class CarFactory
 		return instance;
 	}
 	
-//	public Car createCar()
-//	{
-//		sirialNum ++;
-//		
-//	}
+	public Car createCar()
+	{
+		Car car = new Car();
+		return car;
+	}
 
 }
