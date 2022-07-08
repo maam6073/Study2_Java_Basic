@@ -1,6 +1,6 @@
 package arraylist;
 
-public class Subject 
+public class Subject
 {
 	private String name;		//과목 이름
 	private int scorePoint;		//과목 점수

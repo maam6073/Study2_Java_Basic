@@ -1,9 +1,9 @@
 package arraylist;
 import java.util.ArrayList;
 
-import javax.security.auth.Subject;
 
-public class Student 
+
+public class Student
 {
 	int studentID;
 	String studentName;
