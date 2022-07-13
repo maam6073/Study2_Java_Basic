@@ -15,6 +15,13 @@ public VIPCustomer(int customerID,String customerName, int agentID)
 	System.out.println("VIPCustomer() 생성자 호출"); //하위 클래스 생성할 때 콘솔 출력문
 }
 
+@Override
+public int calcPrice(int price)
+{
+	bonusPoint += price * bonusRatio;
+	return price - (int)(price * saleRatio);	//할인된 가격을 계산하여 반환
+}
+
 public int getAgentID()
 {
 	return agentID;
