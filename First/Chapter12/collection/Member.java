@@ -1,9 +1,9 @@
 package collection;
 
-public class Member
+public class Member implements Comparable<Member>
 {
-	private int memberId;	//È¸¿ø ¾ÆÀÌµð
-	private String memberName;	//È¸¿ø ÀÌ¸§
+	private int memberId;	//È¸ï¿½ï¿½ ï¿½ï¿½ï¿½Ìµï¿½
+	private String memberName;	//È¸ï¿½ï¿½ ï¿½Ì¸ï¿½
 	
 	public Member(int memberId, String memberName)
 	{
@@ -33,6 +33,31 @@ public class Member
 	@Override
 	public String toString()
 	{
-		return memberName + "È¸¿ø´ÔÀÇ ¾ÆÀÌµð´Â" + memberId + "ÀÔ´Ï´Ù.";
+		return memberName + "È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ï¿½" + memberId + "ï¿½Ô´Ï´ï¿½.";
+	}
+	
+	@Override
+	public int hashCode()
+	{
+		return memberId;
+	}
+	
+	@Override
+	public boolean equals(Object obj)
+	{
+		if(obj instanceof Member)
+		{
+			Member member = (Member)obj;
+			if(this.memberId == member.memberId)
+				return true;
+			else
+				return false;
+		}
+		return false;
+	}
+	
+	@Override
+	public int compareTo(Member member) {
+		return this.memberId - member.memberId;
 	}
 }
