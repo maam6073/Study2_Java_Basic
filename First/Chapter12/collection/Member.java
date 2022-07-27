@@ -33,7 +33,7 @@ public class Member implements Comparable<Member>
 	@Override
 	public String toString()
 	{
-		return memberName + "ȸ������ ���̵��" + memberId + "�Դϴ�.";
+		return memberName + "님의 아이디는" + memberId + "입니다.";
 	}
 	
 	@Override

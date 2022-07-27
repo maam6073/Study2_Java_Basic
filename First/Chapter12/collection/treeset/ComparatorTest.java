@@ -20,7 +20,6 @@ public class ComparatorTest{
 		set.add("aaa");
 		set.add("ccc");
 		set.add("bbb");
-		
 		System.out.println(set);
 	}
 }
