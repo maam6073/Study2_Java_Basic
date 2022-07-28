@@ -3,7 +3,7 @@ package quiz_q6;
 import java.util.HashMap;
 
 
-public class CarFactory 
+public class CarFactory
 {
 	static CarFactory inst;
 	private HashMap<String,Car> hashMapCar = new HashMap<String,Car>();
