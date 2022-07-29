@@ -7,16 +7,16 @@ public class MemberHashSetTest {
 	public static void main(String[] args) 
 	{
 		MemberHashSet memberhashset = new MemberHashSet();
-		Member memberLee = new Member(1001,"ÀÌÁö¿ø");
-		Member memberSon = new Member(1002,"¼Õ¹Î±¹");
-		Member memberPark = new Member(1003,"¹Ú¼­ÈÍ");
+		Member memberLee = new Member(1001,"ì´ì§€ì›");
+		Member memberSon = new Member(1002,"ì†ë¯¼êµ­");
+		Member memberPark = new Member(1003,"ë°•ì„œí›¤");
 		
 		memberhashset.addMember(memberLee);
 		memberhashset.addMember(memberSon);
 		memberhashset.addMember(memberPark);
 		memberhashset.showAllMember();
 		
-		Member memberHong = new Member(1003, "È«±æµ¿"); //¾ÆÀÌµğ Áßº¹È¸¿ø Ãß°¡
+		Member memberHong = new Member(1003, "í™ê¸¸ë™"); //ì•„ì´ë”” ì¤‘ë³µíšŒì› ì¶”ê°€
 		memberhashset.addMember(memberHong);
 		memberhashset.showAllMember();
 	}

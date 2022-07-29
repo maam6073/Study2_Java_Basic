@@ -2,15 +2,17 @@ package collection.hashset;
 
 import java.util.HashSet;
 
+import collection.Member;
+
 public class HashSetTest {
 
 	public static void main(String[] args) {
-		HashSet<String> hashSet = new HashSet<String>();
-		hashSet.add(new String("ÀÓÁ¤¼ø"));
-		hashSet.add(new String("¹ÚÇöÁ¤"));
-		hashSet.add(new String("È«¿¬ÀÇ"));
-		hashSet.add(new String("°­°¨Âù"));
-		hashSet.add(new String("°­°¨Âù"));
+		HashSet<Member> hashSet = new HashSet<Member>();
+		hashSet.add(new Member(1,"ì„ì •ìˆœ"));
+		hashSet.add(new Member(2,"ë°•í˜„ì •"));
+		hashSet.add(new Member(3,"í™ì—°ì˜"));
+		hashSet.add(new Member(4,"ê°•ê°ì°¬"));
+		hashSet.add(new Member(5,"ê°•ê°ì°¬"));
 		
 		System.out.println(hashSet);
 	}
