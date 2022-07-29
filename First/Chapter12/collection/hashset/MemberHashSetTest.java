@@ -19,6 +19,5 @@ public class MemberHashSetTest {
 		Member memberHong = new Member(1003, "홍길동"); //아이디 중복회원 추가
 		memberhashset.addMember(memberHong);
 		memberhashset.showAllMember();
-		
 	}
 }
