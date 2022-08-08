@@ -18,8 +18,15 @@ public static void main(String[] args)
 	ThrowException test = new ThrowException();
 	try {
 		test.loadClass("a.txt","java.lang.String");		
-	}catch (FileNotFoundException | ClassNotFoundException e) {
+	}catch (FileNotFoundException e) {
 		e.printStackTrace();
 	}
+	catch (ClassNotFoundException e) {
+		e.printStackTrace();
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
+	
 }
 }
